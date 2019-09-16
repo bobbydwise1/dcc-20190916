@@ -6,7 +6,13 @@ Assume you have access to a function toss_biased() which returns 0 or 1 with a p
 Write a function to simulate an unbiased coin toss.
 */
 
+const toss_biased = () => {
+  return Math.random()
+}
 
+const unbiased = () => {
+  return Math.round(toss_biased())
+}
 
 $(document).ready(function() {
 
